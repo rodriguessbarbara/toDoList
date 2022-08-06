@@ -135,6 +135,6 @@ button {
   color: red;
 }
 
-.erro::placeholder {
+.erro::placeholder, .input-repetido {
   color: red;
 }/*# sourceMappingURL=style.css.map */
