@@ -121,4 +121,20 @@ button {
   margin: 10px 10px 10px 0px;
   padding: 20px;
   cursor: pointer;
+}
+
+.erro {
+  border: 2px solid red;
+}
+
+.erro::-moz-placeholder {
+  color: red;
+}
+
+.erro:-ms-input-placeholder {
+  color: red;
+}
+
+.erro::placeholder {
+  color: red;
 }/*# sourceMappingURL=style.css.map */

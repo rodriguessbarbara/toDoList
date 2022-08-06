@@ -6,11 +6,8 @@ const btnAddProduto = document.getElementById('btn');
 function validarInput() {
   if (inputProduto.value.trim().length > 0) {
     inputProduto.classList.remove('erro');
-      console.log(inputProduto.value);
   } else {
     inputProduto.classList.add('erro');
-    console.log(inputProduto.value);
-
   }
 }
 
