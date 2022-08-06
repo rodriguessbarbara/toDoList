@@ -1,0 +1,25 @@
+$cor-primaria: #0087a1;
+$cor-secundaria: #fff;
+$cor-complemento: #2cb1cc;
+$cor-background: linear-gradient(to right, #b2eefa, #6ac6d8);
+$box-shadow: 0 15px 30px rgba(0, 12, 31, 0.2);
+
+$large-screen: 1200px;
+$medium-screen: 900px;
+$small-screen: 600px;
+
+@mixin device($size) {
+    @if $size == large {
+        @media screen and (min-width: $large-screen) {
+            @content;
+        }
+    } @else if $size == medium {
+        @media screen and (min-width: $medium-screen) and (max-width: ($large-screen - 1)) {
+            @content;
+        }
+    } @else if $size == small {
+        @media screen and (min-width: $small-screen) and (max-width: ($medium-screen - 1)) {
+            @content;
+        }
+    }
+}
