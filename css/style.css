@@ -81,7 +81,7 @@ h1 {
   text-align: center;
 }
 
-p {
+.container > p {
   text-align: center;
   margin-top: 10px;
 }
@@ -115,7 +115,7 @@ button {
   height: 300px;
   overflow-y: scroll;
 }
-.container-lista li {
+.container-lista .tarefa {
   background-color: #fff;
   border-radius: 5px;
   margin: 10px 10px 10px 0px;
@@ -137,4 +137,8 @@ button {
 
 .erro::placeholder, .input-repetido {
   color: red;
+}
+
+.tarefa-concluida {
+  text-decoration: line-through;
 }/*# sourceMappingURL=style.css.map */

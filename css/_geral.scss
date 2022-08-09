@@ -25,7 +25,7 @@ h1 {
     text-align: center;
 }
 
-p {
+.container > p {
     text-align: center;
     margin-top: 10px;
 }
@@ -59,7 +59,7 @@ button {
 .container-lista {
     height: 300px;
     overflow-y: scroll;
-    li {
+    .tarefa {
         background-color: #fff;
         border-radius: 5px;
         margin: 10px 10px 10px 0px;

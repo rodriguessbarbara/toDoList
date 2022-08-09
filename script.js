@@ -1,8 +1,6 @@
-let lista = document.getElementsByClassName('.container-lista');
+let ul = document.querySelector('ul');
 let inputProduto = document.querySelector('.tarefa-input');
-let liItem = document.querySelectorAll('.tarefa');
-let p = document.querySelector('p')			
-
+let p = document.querySelector('p');
 const btnAddProduto = document.getElementById('btn');
 
 function validarInput() {
@@ -16,19 +14,21 @@ function validarInput() {
 
 function novoProduto() {
 	let novoLi = `
-	<li class="item">
+		<li class="tarefa">
+			<p>
 			${inputProduto.value}
-	</li>
+			</p>
+		</li>
 	`;
-		
+
 	let ultimaLi = document.querySelector('li');
 	let ultimaLiString = ultimaLi.innerText;
-	
+
 	function validarInputRepetido() {
 		if (inputProduto.value === ultimaLiString) {
 			inputProduto.classList.add('erro');
 			p.classList.add('input-repetido');
-			p.innerHTML = "Item já adicionado";
+			p.innerHTML = "Tarefa já adicionada";
 		} 
 		else {
 			p.classList.remove('input-repetido');
@@ -38,6 +38,18 @@ function novoProduto() {
 		}
 	}
 	validarInputRepetido();
+	concluirTarefa();
+}
+
+function concluirTarefa() {
+	let liItem = document.querySelectorAll('li');
+
+	for (let item of liItem) {
+		item.addEventListener('click', () => {
+			item.classList.toggle('tarefa-concluida');
+			console.log(item);
+		});
+	}
 }
 
 btnAddProduto.addEventListener('click', validarInput);
