@@ -43,13 +43,17 @@ function novoProduto() {
 
 function concluirTarefa() {
 	let liItem = document.querySelectorAll('li');
+	let i = 0;
 
 	for (let item of liItem) {
+		
 		item.addEventListener('click', () => {
-			item.classList.toggle('tarefa-concluida');
-			console.log(item);
+			if (item.innerText === liItem[i].innerText) {
+				item.classList.toggle('tarefa-concluida');
+			}
 		});
 	}
+	
 }
 
 btnAddProduto.addEventListener('click', validarInput);
