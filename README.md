@@ -1,13 +1,13 @@
 ## Sobre o Projeto
 
 <div align="center"><img src="./img/todolist.png" alt="" width="550px"/></div>
-  > Aplicação dinâmica de uma lista de tarefas, em que se é possível adicionar, remover e concluir atividade.
+<p align="center">Aplicação dinâmica de uma lista de tarefas, em que se é possível adicionar, remover e concluir atividade.</p>
 
 ### Feito com:
 
 * [[HTML5](https://html.spec.whatwg.org/ "HTML5")]
 * [[CSS3](https://www.w3.org/Style/CSS/Overview.en.html "CSS3")]
-* [[SASS/SCSS] (https://sass-lang.com/ "SASS/SCSS")]
+* [[SASS/SCSS](https://sass-lang.com "SASS/SCSS")]
 * [[Javascript](http://es6-features.org/ "Javascript")]
 ---
 ### Próximos Passos
