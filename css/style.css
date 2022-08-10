@@ -116,11 +116,31 @@ button {
   overflow-y: scroll;
 }
 .container-lista .tarefa {
+  display: flex;
+  justify-content: space-between;
   background-color: #fff;
   border-radius: 5px;
   margin: 10px 10px 10px 0px;
   padding: 20px;
   cursor: pointer;
+}
+.container-lista .tarefa p {
+  padding-right: 150px;
+}
+@media screen and (min-width: 900px) and (max-width: 1199px) {
+  .container-lista .tarefa p {
+    padding-right: 500px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container-lista .tarefa p {
+    padding-right: 800px;
+  }
+}
+
+.material-symbols-outlined {
+  color: #0087a1;
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
 }
 
 .erro {
