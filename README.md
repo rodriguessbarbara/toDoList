@@ -1,8 +1,7 @@
 ## Sobre o Projeto
 
-<div align="center"><img src="./img/todolist.png" alt="" width="500px"/></div>
-> Aplicação dinâmica de uma lista de tarefas, em que se é possível adicionar, remover e concluir atividade.
-### Ajustes e melhorias
+<div align="center"><img src="./img/todolist.png" alt="" width="550px"/></div>
+  > Aplicação dinâmica de uma lista de tarefas, em que se é possível adicionar, remover e concluir atividade.
 
 ### Feito com:
 
