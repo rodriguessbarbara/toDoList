@@ -39,6 +39,7 @@ function adicionarTarefa() {
 			p.innerHTML = "Adicione ou remova alguma tarefa.";	
 			document.querySelector('ul').insertAdjacentHTML('afterbegin', novoLi);	
 			document.querySelector('.tarefa').insertAdjacentHTML('beforeend', span);
+			inputProduto.value = '';
 		}
 
 	}

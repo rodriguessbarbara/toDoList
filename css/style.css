@@ -86,10 +86,16 @@ h1 {
   margin-top: 10px;
 }
 
+.container-input {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
 input, button {
   border: 2px;
   border-radius: 5px;
-  padding: 10px 20px;
+  padding: 10px 30px;
   margin: 20px 0;
   background-color: transparent;
   box-shadow: 0 15px 30px rgba(0, 12, 31, 0.2);
@@ -98,10 +104,10 @@ input, button {
 input {
   border: 2px solid #2cb1cc;
 }
-
 input:hover, input:focus {
   outline: 0;
   border: 2px solid #fff;
+  transition: 0.2s;
 }
 
 button {
@@ -109,6 +115,11 @@ button {
   font-size: 1em;
   background-color: #2cb1cc;
   color: #fff;
+}
+button:hover {
+  background-color: #fff;
+  color: #2cb1cc;
+  transition: 0.2s;
 }
 
 .container-lista {
